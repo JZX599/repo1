@@ -1,0 +1,512 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../../img/ui/login_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header {
+	height: 150px;
+	width: 350px;
+	background-image: url(../../img/ui/login2.png);
+	background-repeat: no-repeat;
+	background-size: 85% 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+article {
+	height: auto;
+	width: 800px;
+	border: 1px solid #DEDEDE;
+	margin: 0 auto;
+	background-color: white;
+	margin-top: 10px;
+}
+
+footer {
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+
+/*用户注册头部*/
+
+.user_register_top {
+	width: 800px;
+	margin: 0 auto;
+	padding: 10px;
+	background-color: #F4F4F4;
+}
+
+article h1 {
+	text-align: center;
+	color: #B3B7BB;
+	font-size: 22px;
+}
+
+.user_register_body {
+	width: 750px;
+	overflow: hidden;
+	/*内容超出盒子高度  隐藏*/
+	margin: 0 auto;
+	padding: 10px;
+}
+
+
+/*用户注册的div全部浮动*/
+
+.user_register_body div {
+	float: left;
+}
+
+
+/*各个div框*/
+
+.user_register_id,
+.user_register_code,
+.user_register_email,
+.user_register_idcard,
+.user_register_username,
+.user_register_password,
+.user_register_useraddress,
+.user_register_phone {
+	width: 365px;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+/*用户注册的按钮div清除浮动*/
+
+.user_register_body .user_register_btn {
+	clear: both;
+	width: 260px;
+	height: 35px;
+	margin: 0 230px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+
+/*注册按钮btn样式 */
+
+.user_register_btn input {
+	color: white;
+	height: 35px;
+	background-color: #54D486;
+	border: 1px #54D486 solid;
+	width: 260px;
+	font-size: 16px;
+	letter-spacing: 1px;
+	/*输入框文字间距2px*/
+	border-radius: 5px;
+}
+
+.user_register_btn input:hover {
+	border: 2px solid #54D486;
+	background-color: rgba(217, 217, 217, 0.1);
+	/*灰色*/
+	transition: all 0.6s ease;
+	color: #54D486;
+	font-size: 18px;
+	box-shadow: 0 0 10px #54D486;
+	/*橘色*/
+	letter-spacing: 1px;
+	/*输入框文字间距2px*/
+}
+
+
+/*btn和验证码按钮  按下时边框颜色设置为无*/
+
+.user_register_email input[type=button]:focus,
+.user_register_btn input:focus {
+	outline: none;
+}
+
+.user_register_id span,
+.user_register_code span,
+.user_register_email span,
+.user_register_idcard span,
+.user_register_username span,
+.user_register_password span,
+.user_register_useraddress span,
+.user_register_phone span {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	background: white;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-right: none;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.user_register_id span {
+	background-image: url(../../img/ui/ID.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_code span {
+	background-image: url(../../img/ui/login_check.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_email span {
+	background-image: url(../../img/ui/forget_email.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_idcard span {
+	background-image: url(../../img/ui/IdCart.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_username span {
+	background-image: url(../../img/ui/username.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_password span {
+	background-image: url(../../img/ui/password.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_useraddress span {
+	background-image: url(../../img/ui/useraddress.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_phone span {
+	background-image: url(../../img/ui/phone.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_id input,
+.user_register_code input,
+.user_register_idcard input,
+.user_register_username input,
+.user_register_password input,
+.user_register_useraddress input,
+.user_register_phone input {
+	color: #6C6C6C;
+	height: 35px;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-left: none;
+	width: 180px;
+	font-size: 13px;
+	padding-left: 10px;
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+
+/*输入邮箱框*/
+
+.user_register_email input[type=text] {
+	color: #6C6C6C;
+	height: 35px;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-left: none;
+	width: 180px;
+	font-size: 13px;
+	padding-left: 10px;
+	letter-spacing: 1px;
+	/*输入框文字间距2px*/
+}
+
+
+/*获取验证码按钮*/
+
+.user_register_email input[type=button] {
+	/*color: #6C6C6C;*/
+	/*可以在按钮按下时设置按钮颜色为灰色 */
+	height: 35px;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-left: none;
+	width: 65px;
+	font-size: 10px;
+}
+
+
+/*提示的laber信息*/
+
+.user_register_id label,
+.user_register_username label,
+.user_register_password label,
+.user_register_idcard label,
+.user_register_code label,
+.user_register_useraddress label,
+.user_register_phone label {
+	padding: 0px 5px;
+	color: red;
+	font-size: 12px;
+	line-height: 35px;
+}
+
+.user_register_id input:focus,
+.user_register_idcard input:focus,
+.user_register_username input:focus,
+.user_register_password input:focus,
+.user_register_code input:focus,
+.user_register_useraddress input:focus,
+.user_register_phone input:focus,
+.user_register_email input[type=text]:focus {
+	outline: none;
+	/*去掉边框颜色*/
+	border: 2px solid #D9D9D9;
+	background-color: rgba(217, 217, 217, 0.5);
+	/*灰色*/
+	transition: all 0.6s ease;
+	color: #6c6c6c;
+	font-size: 15px;
+	box-shadow: 0 0 10px #BBBBBB;
+	/*绿色*/
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+}
+
+
+/*性别的div*/
+
+.user_register_sex {
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+	width: 215px;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #D9D9D9;
+	border-radius: 5px;
+}
+
+.user_register_sex label {
+	font-size: 14px;
+	line-height: 35px;
+	padding-left: 2px;
+	text-align: center;
+	color: #6C6C6C;
+}
+
+
+/*input样式   radio*/
+
+.radio_type {
+	width: 20px;
+	height: 20px;
+	top: 5px;
+	appearance: none;
+	position: relative;
+	margin-left: 20px;
+}
+
+.radio_type:before {
+	content: '';
+	width: 17px;
+	height: 17px;
+	border: 1px solid #7d7d7d;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+.radio_type:checked:before {
+	content: '';
+	width: 17px;
+	height: 17px;
+	border: 1px solid #54D486;
+	background: #54D486;
+	display: inline-block;
+	border-radius: 50%;
+	vertical-align: middle;
+}
+
+
+/*打钩*/
+
+.radio_type:checked:after {
+	content: '';
+	width: 8px;
+	height: 3px;
+	border: 2px solid white;
+	border-top: transparent;
+	border-right: transparent;
+	text-align: center;
+	display: block;
+	position: absolute;
+	top: 6px;
+	left: 5px;
+	vertical-align: middle;
+	transform: rotate(-45deg);
+}
+
+
+/*跳转*/
+
+.login_bottom {
+	width: 750px;
+	position: relative;
+	padding: 10px;
+}
+
+
+/*登录底部跳转其他页面*/
+
+.login_bottom .a_jump {
+	position: absolute;
+	top: -4px;
+	right: 20px;
+}
+
+.login_bottom span {
+	color: #6C6C6C;
+	margin: 0 1px;
+}
+
+.login_bottom a {
+	padding-left: 5px;
+	font-size: 14px;
+	color: #6C6C6C;
+	letter-spacing: 1px;
+	/*输入框文字间距2px*/
+}
+
+.login_bottom a:hover {
+	transition: all 0.6s ease;
+	box-shadow: 0 0 5px #6C6C6C;
+	/*橘色*/
+}
+
+
+/*组织注册页面单独css*/
+
+
+/*各个div框*/
+
+.user_register_orgname {
+	width: 365px;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+}
+
+.user_register_orgname span {
+	width: 35px;
+	height: 35px;
+	display: inline-block;
+	background: white;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-right: none;
+	border-bottom-left-radius: 5px;
+	border-top-left-radius: 5px;
+}
+
+.user_register_orgname span {
+	background-image: url(../../img/ui/org.png);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+}
+
+.user_register_orgname input {
+	color: #6C6C6C;
+	height: 35px;
+	float: left;
+	border: 1px #D9D9D9 solid;
+	border-left: none;
+	width: 180px;
+	font-size: 13px;
+	padding-left: 10px;
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+}
+
+.user_register_orgname label {
+	padding: 0px 5px;
+	color: red;
+	font-size: 12px;
+	line-height: 35px;
+}
+
+.user_register_orgname input:focus {
+	outline: none;
+	/*去掉边框颜色*/
+	border: 2px solid #D9D9D9;
+	background-color: rgba(217, 217, 217, 0.5);
+	/*灰色*/
+	transition: all 0.6s ease;
+	color: #6c6c6c;
+	font-size: 15px;
+	box-shadow: 0 0 10px #BBBBBB;
+	/*绿色*/
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+}
+
+
+/*组织地址的div*/
+
+.user_register_address {
+	letter-spacing: 0.1px;
+	/*输入框文字间距2px*/
+	width: 215px;
+	height: 35px;
+	margin-top: 10px;
+	margin-bottom: 20px;
+	border: 1px solid #D9D9D9;
+	position: relative;
+	border-radius: 5px;
+}
+
+.user_register_address select {
+	font-size: 12px;
+	color: #6C6C6C;
+}
+
+.user_register_address option {
+	font-size: 12px;
+	color: #6C6C6C;
+}
+
+.user_register_address select:focus {
+	outline: none;
+	border: 1px solid #D9D9D9;
+	box-shadow: 0 0 10px #BBBBBB;
+	transition: all 0.6s ease;
+}
+
+.user_register_address label {
+	font-size: 14px;
+	line-height: 35px;
+	padding-left: 2px;
+	text-align: center;
+	color: #6C6C6C;
+}
+
+
+
+/*志愿者注册页面单独css*/

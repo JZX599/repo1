@@ -1,0 +1,48 @@
+	body {
+			background: rgb(243, 243, 243);
+		}
+		
+		.son_body {
+			background: white;
+			border: 1px solid #ECECEC;
+		}
+		
+		hr {
+			margin-top: 10px;
+			margin-bottom: 10px;
+		}
+		
+		thead {
+			background-color: #E5E5E5;
+		}
+		
+		a,
+		label,
+		th,
+		td {
+			text-align: center;
+			font-size: 12px;
+			vertical-align: middle!important;
+		}
+		
+		h3 {
+			font-size: 14px;
+			color: #3E9EA5;
+			font-weight: bold;
+			margin: 5px;
+			margin-top: 10px;
+		}
+		
+		.form-group {
+			margin-bottom: 2px;
+		}
+		/*--------------------------------------*/
+		
+	
+		
+		.col-xs-6,
+		.col-xs-3 {
+			padding: 0;
+			margin: 0;
+			padding-right: 5px;
+		}

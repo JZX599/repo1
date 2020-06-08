@@ -1,0 +1,269 @@
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+body{
+ background: #eeeeee url(../../img/ui/bg.jpg) top left repeat;
+}
+
+
+/*头部*/
+
+header {
+	height: 70px;
+	width: 1200px;
+	background-color: white;
+	margin: 0 auto;
+}
+
+
+/*顶部 左边 个人中心*/
+
+.header_left {
+	border: 1px solid #ECECEC;
+	width: 14%;
+	height: 70px;
+	float: left;
+	text-align: center;
+	line-height: 70px;
+	color: #3E9EA5;
+	transition: all 1s ease;
+}
+
+.header_left:hover {
+	background-color: #3E9EA5;
+	color: white;
+	transition: all 1s ease;
+}
+
+
+/*顶部 左边 用户名和网站首页*/
+
+.header_right {
+	background-color: white;
+	width: 86%;
+	height: 70px;
+	float: left;
+	position: relative;
+}
+
+
+/*登陆成功用户名*/
+
+.user_span_left {
+	padding: 2px;
+	border: 1px solid #ECECEC;
+	top: 20px;
+	border-radius: 2px;
+	position: absolute;
+	left: 25px;
+}
+
+#user_span {
+	display: block;
+	width: 25px;
+	height: 25px;
+	background-image: url(../../img/ui/user_ls1.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#user_name_span {
+	margin-left: 5px;
+	line-height: 25px;
+	float: left;
+	color: #9D9D9D;
+	font-weight: 600;
+	cursor: pointer;
+}
+
+
+/*返回网站首页*/
+
+.user_span_right {
+	padding: 2px;
+	border: 1px solid #ECECEC;
+	top: 25px;
+	font-size: 12px;
+	border-radius: 2px;
+	position: absolute;
+	right: 25px;
+	transition: all 0.6s ease;
+}
+
+.user_span_right:hover {
+	transition: all 0.6s ease;
+	background-color: #3E9EA5;
+}
+
+.user_span_right:hover #user_name_a {
+	transition: all 0.6s ease;
+	color: #D4D4D4;
+}
+
+#return_span {
+	display: block;
+	width: 20px;
+	height: 20px;
+	background-image: url(../../img/ui/return.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	float: left;
+}
+
+#user_name_a {
+	margin-left: 5px;
+	line-height: 20px;
+	float: left;
+	color: #3E9EA5;
+	font-weight: bold;
+}
+
+
+/*中部*/
+
+#article {
+	width: 1200px;
+	min-height: 600px;
+	background-color: white;
+	margin: 0 auto;
+	/*	border-right: 2px solid #ECECEC;*/
+}
+
+
+/*整个中部*/
+
+.user_manage_article {
+	width: 1200px;
+	min-height: 600px;
+	background-color: white;
+	/*border-right: 2px solid #ECECEC;*/
+}
+
+
+/*中部左边ul列表*/
+
+.user_manage_list {
+	padding-top: 15px;
+	width: 14%;
+	background-color: white;
+	/*border-right: 2px solid #ECECEC;*/
+	float: left;
+}
+
+.list_content ul li {
+	padding: 5px;
+	height: 50px;
+	width: 140px;
+	background-color: white;
+	border-bottom-right-radius: 5px;
+	border-top-right-radius: 5px;
+	color: red;
+}
+
+
+/*默认选中第一li*/
+
+.list_content ul li:first-child {
+	background-color: #3E9EA5;
+}
+
+.list_content ul li:first-child a {
+	color: white;
+}
+
+.list_content ul li span {
+	display: block;
+	width: 30px;
+	height: 30px;
+	margin: 5px 5px;
+	float: left;
+}
+
+.list_content ul li a {
+	font-size: 15px;
+	line-height: 40px;
+	float: left;
+	color: #6C6C6C;
+	width: 120px;
+	letter-spacing: 1px;
+}
+
+.span1 {
+	background-image: url(../../img/ui/manage_huodong.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span2 {
+	background-image: url(../../img/ui/manage_baoming.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span3 {
+	background-image: url(../../img/ui/manage_gerenxinxi.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span4 {
+	background-image: url(../../img/ui/manage_anquan.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span5 {
+	background-image: url(../../img/ui/tuichu.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span6 {
+	background-image: url(../../img/ui/manage_zhuzi.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+.span7 {
+	background-image: url(../../img/ui/manage_yonghu.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.span8 {
+	background-image: url(../../img/ui/manage_xitong.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.span9 {
+	background-image: url(../../img/ui/manage_cate.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+/*中部右边的iframe*/
+
+.user_manage_view {
+	overflow: hidden;
+	float: left;
+	padding: 5px;
+	width: 86%;
+	min-height: 570px;
+	border: 1px solid #ECECEC;
+	border-bottom: none;
+	border-right: none;
+	/*border-right: 2px solid #ECECEC;*/
+}
+
+#footer {
+	margin: 0 auto;
+	text-align: center;
+	font-size: 12px;
+	color: #6C6C6C;
+	padding: 10px;
+}

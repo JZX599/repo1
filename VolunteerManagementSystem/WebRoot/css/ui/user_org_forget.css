@@ -1,0 +1,297 @@
+	* {
+		box-sizing: border-box;
+		padding: 0px;
+		margin: 0px;
+		list-style: none;
+		text-decoration: none;
+	}
+	
+	body {
+		background-image: url(../../img/ui/login_bg.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	header {
+		height: 150px;
+		width: 350px;
+		background-image: url(../../img/ui/login2.png);
+		background-repeat: no-repeat;
+		background-size: 85% 90%;
+		margin: 0 auto;
+		margin-top: 20px;
+	}
+	
+	article {
+		height: auto;
+		width: 450px;
+		border: 1px solid #DEDEDE;
+		margin: 0 auto;
+		background-color: white;
+		margin-top: 10px;
+	}
+	
+	footer {
+		background-image: none;
+		background-color: rgba(255, 255, 255, 0.3);
+	}
+	/*找回密码头部*/
+	
+	.forget_top {
+		width: 450px;
+		margin: 0 auto;
+		padding: 10px;
+		background-color: #F4F4F4;
+	}
+	
+	article h1 {
+		text-align: center;
+		color: #B3B7BB;
+		font-size: 28px;
+	}
+	/*找回密码  主体*/
+	
+	.login_bottom,
+	.forget_body {
+		width: 400px;
+		margin: 0 auto;
+		padding: 10px;
+	}
+	/*输入框外部div*/
+	
+	.forget_username,
+	.forget_check,
+	.forget_password,
+	.forget_email,
+	.login_type,
+	.forget_code,
+	.forget_btn {
+		width: 380px;
+		height: 40px;
+		margin-top: 10px;
+		margin-bottom: 20px;
+	}
+	/*输入框前图片  矢量图*/
+	
+	.forget_username span,
+	.forget_password span,
+	.forget_email span,
+	.forget_code span {
+		width: 40px;
+		height: 40px;
+		display: inline-block;
+		background: white;
+		float: left;
+		border: 1px #D9D9D9 solid;
+		border-right: none;
+	}
+	/*矢量图*/
+	
+	.forget_username span {
+		background-image: url(../../img/ui/IdCart.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.forget_password span {
+		background-image: url(../../img/ui/password.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.forget_email span {
+		background-image: url(../../img/ui/forget_email.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	
+	.forget_code span {
+		background-image: url(../../img/ui/login_check.png);
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+	/*输入账户、密码、验证码 框*/
+	
+	.forget_username input,
+	.forget_password input,
+	.forget_code input {
+		color: #6C6C6C;
+		height: 40px;
+		float: left;
+		border: 1px #D9D9D9 solid;
+		border-left: none;
+		width: 340px;
+		font-size: 16px;
+		padding-left: 10px;
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	/*输入邮箱框*/
+	
+	.forget_email input[type=text] {
+		color: #6C6C6C;
+		height: 40px;
+		float: left;
+		border: 1px #D9D9D9 solid;
+		border-left: none;
+		width: 270px;
+		font-size: 16px;
+		padding-left: 10px;
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	/*获取验证码按钮*/
+	
+	.forget_email input[type=button] {
+		/*color: #6C6C6C;*/
+		/*可以在按钮按下时设置按钮颜色为灰色 */
+		height: 40px;
+		float: left;
+		border: 1px #D9D9D9 solid;
+		border-left: none;
+		width: 70px;
+		font-size: 12px;
+	}
+	
+	.forget_username input:focus,
+	.forget_password input:focus,
+	.forget_code input:focus,
+	.forget_email input[type=text]:focus {
+		outline: none;
+		/*去掉边框颜色*/
+		border: 2px solid #D9D9D9;
+		background-color: rgba(217, 217, 217, 0.5);
+		/*灰色*/
+		transition: all 0.6s ease;
+		color: #6c6c6c;
+		font-size: 18px;
+		box-shadow: 0 0 10px #BBBBBB;
+		/*绿色*/
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	/*登录方式的div*/
+	
+	.login_type {
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+		border: 1px solid #F5F5F5;
+	}
+	
+	.login_type label {
+		font-size: 16px;
+		line-height: 40px;
+		text-align: center;
+		color: #6C6C6C;
+		margin-left: 5px;
+	}
+	/*input样式   radio*/
+	
+	.radio_type {
+		width: 20px;
+		height: 20px;
+		top: 5px;
+		appearance: none;
+		position: relative;
+		margin-left: 20px;
+	}
+	
+	.radio_type:before {
+		content: '';
+		width: 17px;
+		height: 17px;
+		border: 1px solid #7d7d7d;
+		display: inline-block;
+		border-radius: 50%;
+		vertical-align: middle;
+	}
+	
+	.radio_type:checked:before {
+		content: '';
+		width: 17px;
+		height: 17px;
+		border: 1px solid #54D486;
+		background: #54D486;
+		display: inline-block;
+		border-radius: 50%;
+		vertical-align: middle;
+	}
+	/*打钩*/
+	
+	.radio_type:checked:after {
+		content: '';
+		width: 8px;
+		height: 3px;
+		border: 2px solid white;
+		border-top: transparent;
+		border-right: transparent;
+		text-align: center;
+		display: block;
+		position: absolute;
+		top: 6px;
+		left: 5px;
+		vertical-align: middle;
+		transform: rotate(-45deg);
+	}
+	/*forget_btn样式 */
+	
+	.forget_btn input {
+		color: white;
+		height: 40px;
+		background-color: #54D486;
+		border: 1px #54D486 solid;
+		width: 380px;
+		font-size: 16px;
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	
+	.forget_btn input:hover {
+		border: 2px solid #54D486;
+		background-color: rgba(217, 217, 217, 0.1);
+		/*灰色*/
+		transition: all 0.6s ease;
+		color: #54D486;
+		font-size: 18px;
+		box-shadow: 0 0 10px #54D486;
+		/*橘色*/
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	
+	.forget_email input[type=button]:focus,
+	.forget_btn input:focus {
+		outline: none;
+	}
+	/*跳转*/
+	
+	.login_bottom {
+		position: relative;
+		margin-bottom: 5px;
+	}
+	/*登录底部跳转其他页面*/
+	
+	.login_bottom .a_jump {
+		position: absolute;
+		top: -10px;
+		right: 20px;
+	}
+	
+	.login_bottom span {
+		color: #6C6C6C;
+		margin: 0 1px;
+	}
+	
+	.login_bottom a {
+		padding-left: 5px;
+		font-size: 14px;
+		color: #6C6C6C;
+		letter-spacing: 1px;
+		/*输入框文字间距2px*/
+	}
+	
+	.login_bottom a:hover {
+		transition: all 0.6s ease;
+		box-shadow: 0 0 5px #6C6C6C;
+		/*橘色*/
+	}

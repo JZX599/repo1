@@ -1,0 +1,123 @@
+@CHARSET "UTF-8";
+
+* {
+	box-sizing: border-box;
+	padding: 0px;
+	margin: 0px;
+	list-style: none;
+	text-decoration: none;
+}
+
+body {
+	background-image: url(../../img/ui/login_bg.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+header {
+	height: 150px;
+	width: 350px;
+	background-image: url(../../img/ui/login2.png);
+	background-repeat: no-repeat;
+	background-size: 85% 90%;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+article {
+	height: auto;
+	width: 800px;
+	border: 1px solid #DEDEDE;
+	border-radius: 15px;
+	margin: 0 auto;
+	background-color: white;
+	
+}
+
+footer {
+	background-image: none;
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+/*信息提示div*/
+
+.user_register_top {
+	width: 800px;
+	margin: 0 auto;
+	border-top-left-radius: 15px;
+	border-top-right-radius: 15px;
+	padding: 10px;
+	background-color: #F4F4F4;
+}
+
+
+.user_register_body {
+	width: 750px;
+	min-height: 300px;
+	/*内容超出盒子高度  隐藏*/
+	margin: 0 auto;
+	padding: 10px;
+}
+/*跳转*/
+
+.login_bottom {
+	width: 750px;
+	position: relative;
+	padding: 10px;
+}
+
+
+/*登录底部跳转其他页面*/
+
+.login_bottom .a_jump {
+	position: absolute;
+	top: -4px;
+	right: 20px;
+}
+
+.login_bottom span {
+	color: #6C6C6C;
+	margin: 0 1px;
+}
+
+.login_bottom a {
+	padding-left: 5px;
+	font-size: 14px;
+	color: #6C6C6C;
+	letter-spacing: 1px;
+	
+	
+	/*输入框文字间距2px*/
+}
+
+.login_bottom a:hover {
+	transition: all 0.6s ease;
+	box-shadow: 0 0 5px #6C6C6C;
+	/*橘色*/
+}
+
+article h1 {
+	text-align: center;
+	color: #B3B7BB;
+	font-size: 22px;
+}
+article h2 {
+	text-align: center;
+
+color: red;
+}
+article h3 {
+	text-align: center;
+
+
+}
+article h4 {
+	text-align: center;
+
+
+}
+article h5 {
+	text-align: center;
+
+
+}

@@ -1,0 +1,70 @@
+footer {
+	/*overflow: hidden;内容超出盒子高度  隐藏*/
+/*	overflow: auto;
+	clear: both;*/
+	/*特别重要清除浮动*/
+	width: 100%;
+	min-width: 1200px;
+	background: url(../img/menu-bg-1.jpg);
+	
+	
+}
+
+
+footer .footer_centen {
+	padding-top: 30px;
+	width: 1000px;
+	margin: 0 auto;
+	min-height: 150px;
+	
+}
+
+
+footer .footer_centen .footer_centen_left {
+	float: left;
+	width: 350px;
+	
+	
+
+}
+
+
+footer .footer_centen .footer_centen_right {
+	float: right;
+	width: 350px;
+}
+
+
+
+
+footer  .p {
+	color: #6C6C6C;
+	font-size: 12px;
+	width: 90%;
+	margin: 0 auto;
+}
+
+footer .footer_bottom {
+	margin: 0 auto;
+	width: 1200px;
+	text-align: center;
+}
+
+
+footer .footer_bottom .fanke_span {
+	color: black;
+	margin: 0 5px;
+	cursor: pointer;
+	
+	/*鼠标手指*/
+}
+
+marquee {
+	cursor: pointer;
+	/*鼠标手指*/
+	color: #6C6C6C;
+}
+
+marquee:hover {
+	color: blueviolet;
+}
